@@ -12,6 +12,7 @@
 body {
     background-color: var(--light-color);
     font-family: Arial, sans-serif;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .container {
@@ -41,5 +42,52 @@ body {
 }
 
 .custom-navbar {
-    background-color: blue !important;
+    background-color: var(--info-color);
+}
+.custom-navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.custom-navbar .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--light-color);
+}
+
+.custom-navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hero {
+    background: linear-gradient(to right, #007bff, #00aaff);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+.equal-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
