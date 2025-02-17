@@ -39,3 +39,7 @@ body {
 .loading.show {
     display: block; /* Show loading screen when needed */
 }
+
+.custom-navbar {
+    background-color: blue !important;
+}
